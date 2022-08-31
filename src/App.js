@@ -1,5 +1,5 @@
-import Clock from "./components/Class/Clock";
 import Clock2 from "./components/Function/Clock2";
+import Todos from "./components/Function/Reducer/CobaReducer";
 
 function App() {
   return (
@@ -11,7 +11,10 @@ function App() {
     // </div>
     // <LifeCycleComp />
     // <Clock />
-    <Clock2 />
+    <>
+      <Clock2 />
+      <Todos />
+    </>
   );
 }
 

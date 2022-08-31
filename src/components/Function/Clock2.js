@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useReducer } from "react";
 
 const Clock2 = () => {
   const [time, setTime] = useState({ date: new Date(), date2: new Date() });
