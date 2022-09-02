@@ -5,13 +5,13 @@ const initialState = [
     id: 1,
     nama: "Bastian Sweinsteiger",
     umur: 40,
-    isMarried: false,
+    isMarried: true,
   },
   {
     id: 2,
     nama: "Frank Lampard",
     umur: 41,
-    isMarried: false,
+    isMarried: true,
   },
 ];
 
@@ -35,12 +35,10 @@ const Todos = () => {
 
   const handleMarried = (todo) => {
     dispatch({ type: "COMPLETE", id: todo.id });
-    console.log(dispatch({ isMarried: todo.isMarried }));
   };
 
-  const [obj1, obj2] = todos;
-  console.log(obj1);
-  console.log(obj2);
+  const [...obj] = todos;
+  console.log(obj);
   return (
     <>
       {todos.map((todo) => {
