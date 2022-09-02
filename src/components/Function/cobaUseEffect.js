@@ -56,7 +56,7 @@ const CobaUseEffect = () => {
         Tampilin/sembunyiin Counter
       </button>
 
-      {showCounter && <Counter start={10} />}
+      {showCounter && <Counter start={0} />}
     </div>
   );
 };
