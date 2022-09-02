@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useReducer } from "react";
+import React, { useEffect, useState, useReducer } from "react";
 
 const Clock2 = () => {
   const [time, setTime] = useState({ date: new Date(), date2: new Date() });
@@ -17,7 +17,7 @@ const Clock2 = () => {
     <div>
       <h1>Hello, dunia!</h1>
       <h2>
-        Hari ini :{"   "}
+        Today : {"   "}
         {date2.toLocaleDateString(undefined, {
           weekday: "long",
           year: "numeric",
@@ -25,7 +25,7 @@ const Clock2 = () => {
           day: "numeric",
         })}
       </h2>
-      <h2>jam : {date.toLocaleTimeString("en-GB")}</h2>
+      <h2>Time Now : {date.toLocaleTimeString("en-GB")}</h2>
     </div>
   );
 };

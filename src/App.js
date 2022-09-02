@@ -1,5 +1,6 @@
 import Clock2 from "./components/Function/Clock2";
 import Todos from "./components/Function/Reducer/CobaReducer";
+import CobaUseEffect from "./components/Function/cobaUseEffect";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <>
       <Clock2 />
       <Todos />
+      <CobaUseEffect />
     </>
   );
 }
