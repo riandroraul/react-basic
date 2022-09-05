@@ -51,6 +51,7 @@ const Todos = () => {
                 onChange={() => handleMarried(todo)}
               />
               {todo.nama}
+              {/* <p>state redux = {state.value}</p> */}
             </label>
           </div>
         );
